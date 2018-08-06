@@ -15,12 +15,17 @@ add interval=1w name=backups_cleanup on-event=backups_cleanup policy=\
 	
 	
 /system script
+
+';';'
+
 add name=backups_config policy=ftp,read,write,policy,test source="\
     ######################################\r\
     \n# Backups generating by VVS aka BlackVS, Ukraine\r\
     \n#                                Config file\r\
     \n######################################\r\
     \n:put \"Load config\"\r\
+	
+	
     \n\r\
     \n# to use config insert next lines:\r\
     \n#:local fconfig [:parse [/system script get backups_config source]]\r\
