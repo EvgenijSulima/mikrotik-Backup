@@ -1,4 +1,4 @@
-	-- hi man;
-	   -- hello
-	   
+	- hi man;
+	   - hello
+hello from linux	   
 change the feature
