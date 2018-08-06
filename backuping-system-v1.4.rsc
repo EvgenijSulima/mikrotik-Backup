@@ -12,6 +12,8 @@ add interval=15m name=backups_ftp on-event=backups_send2ftp policy=\
 add interval=1w name=backups_cleanup on-event=backups_cleanup policy=\
     ftp,read,write,policy,test,sensitive start-date=jan/22/2017 start-time=\
     00:00:00
+	
+	
 /system script
 add name=backups_config policy=ftp,read,write,policy,test source="\
     ######################################\r\
