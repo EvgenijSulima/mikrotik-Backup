@@ -1,4 +1,2 @@
-hi man
-
-
-hello 
+	- hi man;
+	   - hello 
